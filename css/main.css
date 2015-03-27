@@ -1,0 +1,41 @@
+
+/* Always keep psd, ai, etc documents*/
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.masthead {
+  padding-top: 6em;
+  background-image: url("../images/logo.svg"), url("../images/masthead-bg.png");
+  background-size: 75px auto, 200px auto; /*width first, height second*/ /*the comma indicates apply to the second background image*/
+  background-repeat: no-repeat, repeat; /*repeat-x = horizontal   repeat-y =vertically   no-repeat*/
+  background-position: center 10px, left top; /* have to have 2 words, numbers or 1 word and 1 number*/
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+.box {
+  background-color: #3b3a33;
+  padding: 1em;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  color: white;
+  background-color: #a8ae98;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #a8ae98, #5b5e52); /* 3 pieces of information, direction, first colour, second colour*/
+}
